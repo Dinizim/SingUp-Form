@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600');
+
+:root{
+    --font: 'Poppins',sans-serif;
+    --red:hsl(0, 100%, 74%) ;
+    --green:hsl(154, 59%, 51%) ;
+    --Blue: hsl(248, 32%, 49%) ;
+    --DarkBlue: hsl(249, 10%, 26%) ;
+    --GrayishBlue: hsl(246, 25%, 77%); 
+     font-size: 16px ;
+}
+@media screen and (min-width:375px){
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: var(--font);
+    }
+    html,body{
+        background: var(--red) url(imagens/bg-intro-mobile.png);
+
+    }
+    main{
+        padding: 30px;
+        text-align: center;
+    }
+    .conteudo-escrito{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0px 20px 0px ;
+        gap:15px;
+        color: white;
+        text-align: center;
+    }
+    p{
+        font-size: 13px;
+    }
+    .Formulario{
+        margin-top: 60px;
+        max-width: 334px;
+        margin: auto;
+    }
+    .Aviso{
+        text-align: center;
+        background-color: var(--Blue);
+        color: white;
+        padding: 10px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+    .Aviso > p > span{
+        font-weight: 600;
+    }
+    form{
+        display: flexbox;
+        background-color: white;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+    }
+    .cadastro{
+        padding: 0px;
+        margin: 15px 10px;
+        border: 1px solid var(--GrayishBlue);
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    input{
+        width: 80%;
+        padding: 10px;
+        border: none;
+        margin-left: -25px;
+
+    }
+    input[type='password']{
+        width: calc(80% );
+    }
+    #error{
+        display: none;
+    }
+    #eye{
+        display: inline-block;
+        position: absolute;
+        width: 21px;
+        height: 21px;
+        background-image: url(imagens/view.png);
+        background-size: cover;
+        top: 9px;
+        left: 200px;
+        cursor: pointer;
+
+    }
+    input:focus{
+        border: none;
+        box-shadow: 0 0 0 0;
+        border: 0 none;
+        outline: 0;
+    }
+    input[type='submit']{
+        background-color: var(--green);
+        width: 240px;
+        border: 1px solid var(--green);
+        margin-left: 1px;
+        margin: 15px 0px;
+        padding: 10px;
+        border-radius: 5px;
+        color: white;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.623);
+        margin-bottom: 4px;
+    }
+    form > p{
+        margin-top: 25px;
+        color: var(--GrayishBlue);
+        font-size: 10px;
+    }
+    a{
+        color: var(--red);
+        font-weight: 600;
+        text-decoration: none;
+    }
+}

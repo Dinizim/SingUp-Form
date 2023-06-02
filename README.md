@@ -40,6 +40,6 @@ Users should be able to:
 ### **Built with**
 
 
-- Start with Mobile-first
+- Mobile-first concept
 - Semantic HTML5 
 - Flexbox
