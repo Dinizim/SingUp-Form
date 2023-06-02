@@ -3,7 +3,7 @@
 :root{
     --font: 'Poppins',sans-serif;
     --red:hsl(0, 100%, 74%) ;
-    --green:hsl(154, 59%, 51%) ;
+    --green:hwb(154 22% 20%) ;
     --Blue: hsl(248, 32%, 49%) ;
     --DarkBlue: hsl(249, 10%, 26%) ;
     --GrayishBlue: hsl(246, 25%, 77%); 
@@ -16,7 +16,7 @@
         font-family: var(--font);
     }
     html,body{
-        background: var(--red) url(imagens/bg-intro-mobile.png);
+        background: var(--red) url(../images/bg-intro-mobile.png);
 
     }
     main{
@@ -75,37 +75,36 @@
         width: calc(80% );
     }
     #error{
-        display: none;
+        background-image: url(../images/icon-error.svg);
     }
     #eye{
-        display: inline-block;
-        position: absolute;
-        width: 21px;
-        height: 21px;
-        background-image: url(imagens/view.png);
-        background-size: cover;
-        top: 9px;
-        left: 200px;
-        cursor: pointer;
+        width:;
 
     }
     input:focus{
-        border: none;
+        border: 0;
         box-shadow: 0 0 0 0;
         border: 0 none;
         outline: 0;
     }
     input[type='submit']{
         background-color: var(--green);
-        width: 240px;
+        width: 95%;
         border: 1px solid var(--green);
         margin-left: 1px;
         margin: 15px 0px;
         padding: 10px;
         border-radius: 5px;
         color: white;
+        font-weight: 400;
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.623);
         margin-bottom: 4px;
+        box-shadow: 2px 3px 3px hsla(153, 22%, 20%, 0.479);
+    }
+    input[type='submit']:hover{
+        background-color: hwb(154 18% 38%) ;
+        box-shadow: none;
+        transition: 0.3s;
     }
     form > p{
         margin-top: 25px;
@@ -116,5 +115,31 @@
         color: var(--red);
         font-weight: 600;
         text-decoration: none;
+    }
+}
+@media screen and (min-width:769px){
+    html,body{
+        background: var(--red) url(../images/bg-intro-desktop.png);
+        
+
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .conteudo-escrito{
+        justify-content: center;
+        text-align: justify;
+        width: 45%;
+        padding: 0px 40px;
+        margin-left: 40px;
+        font-size: 24px;
+    }
+    .Formulario{
+        width: 55%;
+        max-width: 500px;
     }
 }
