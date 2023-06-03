@@ -12,6 +12,7 @@ This is a solution to the [Intro component with sign up form challenge on Fronte
     - [**The challenge**](#the-challenge)
     - [**Screenshot**](#screenshot)
   - [**My Process**](#my-process)
+    - [**What I learned**](#what-i-learned)
     - [**Built with**](#built-with)
 
 ## **Overview**
@@ -36,7 +37,24 @@ Users should be able to:
 <br>
 
 ## **My Process**
+  ### **What I learned**
 
+
+To see how you can add code snippets, see below:
+
+```html
+<h1>Some HTML code I'm proud of</h1>
+```
+```css
+.proud-of-this-css {
+  color: papayawhip;
+}
+```
+```js
+const proudOfThisFunc = () => {
+  console.log('🎉')
+}
+```
 ### **Built with**
 
 

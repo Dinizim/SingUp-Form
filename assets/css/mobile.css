@@ -58,8 +58,9 @@
         border-radius: 10px;
     }
     .cadastro{
+        position: relative;
         padding: 0px;
-        margin: 15px 10px;
+        margin: 25px 10px;
         border: 1px solid var(--GrayishBlue);
         border-radius: 5px;
         margin-bottom: 10px;
@@ -68,23 +69,34 @@
         width: 80%;
         padding: 10px;
         border: none;
+
         margin-left: -25px;
 
     }
-    input[type='password']{
-        width: calc(80% );
-    }
+    
     #error{
-        background-image: url(../images/icon-error.svg);
+        position: absolute;
+        top: 7px;
+        display: none;
     }
-    #eye{
-        width:;
-
+    .error-msg{
+        display: none;
+        text-align: right;
+        padding: 1px;
+        width: 300px;
+        top: 40px;
+        left: -30px;
+        color: var(--red);
+        font-size: 11px;
+        font-weight: 400;
+        position: absolute;
+    }
+    .cadastro:focus-within{
+        border: 1px solid var(--DarkBlue);
     }
     input:focus{
-        border: 0;
         box-shadow: 0 0 0 0;
-        border: 0 none;
+        border: 0;
         outline: 0;
     }
     input[type='submit']{
@@ -117,7 +129,7 @@
         text-decoration: none;
     }
 }
-@media screen and (min-width:769px){
+@media screen and (min-width:1026px){
     html,body{
         background: var(--red) url(../images/bg-intro-desktop.png);
         
@@ -133,13 +145,24 @@
     .conteudo-escrito{
         justify-content: center;
         text-align: justify;
-        width: 45%;
-        padding: 0px 40px;
-        margin-left: 40px;
+        width: 40%;
+        padding: 0px 10px;
+        margin-left: 10%;
         font-size: 24px;
     }
     .Formulario{
         width: 55%;
         max-width: 500px;
+    }
+    .error-msg{
+        text-align: right;
+        padding: 1px;
+        width: 47%;
+        top: 40px;
+        left: 235px;
+        color: var(--red);
+        font-size: 11px;
+        font-weight: 400;
+        position: absolute;
     }
 }
