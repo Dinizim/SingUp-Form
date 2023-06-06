@@ -69,6 +69,8 @@ function nameValidate(){
 }  
 
 ```
+### links 
+ - [Site URL](https://singup-form.netlify.app)
 ### Useful resources
 
 - [Form Validation Video ](https://youtu.be/YcTkoIAi0Bg) - this helped me a lot to create validation of user inputs
