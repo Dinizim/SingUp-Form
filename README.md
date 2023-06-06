@@ -44,7 +44,7 @@ Users should be able to:
 <br>
 
 ## **My Process**
-  ### **What I learned**
+### **What I learned**
  
 by completing this challenge you can learn a code to perform input validation using JavaScript and a smart way to use functions, which I'm sure I'll use in future code
 
