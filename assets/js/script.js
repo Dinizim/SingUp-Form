@@ -6,12 +6,13 @@ const input = document.querySelectorAll('.input')
 
 
 //function que criar e remove o erro
+//aproveitei e pratiquei um pouco de arrow function
 setError = (index) => {
     SignUp[index].style.border = '1px solid #ff7a7a'
     ErrorMSG[index].style.display = 'block'
 }
 
-function removeError(index){
+removeError = (index) => {
     SignUp[index].style.border = '1px solid #b9b6d3'
     ErrorMSG[index].style.display = 'none'
 }
