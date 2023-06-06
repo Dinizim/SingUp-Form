@@ -33,11 +33,11 @@ Users should be able to:
 ### **Screenshot**
 <br>
 
-<h3> <strong> Desktop
+<h3> <strong> Desktop </strong </h3>
 
 ![Challege](assets/images/design/desktop-design.jpg)
 
-<h3> <strong> Mobile
+<h3> <strong> Mobile </strong </h3>
 
 ![Challege](assets/images/design/mobile-design.jpg)
 
