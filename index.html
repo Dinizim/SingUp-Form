@@ -17,31 +17,28 @@
             <div class="Aviso">
                 <p><span>Experimente grátis por 7 dias</span> e depois pague US$ 20/mês.</p>
             </div>
-            <form action="" autocomplete="on">
+            <form action="" autocomplete="on" id="form">
                 <div class="cadastro">
-                    <input type="text" id="F-name" placeholder="Primeiro Nome" required autocomplete="name">
-                    <span id="error"><img src="assets/images/icon-error.svg" alt="" srcset=""></span>
-                    <span class="error-msg">Primeiro Nome não pode estar vazio</span>
+                    <input class='input'type="text" id="F-name" placeholder="Primeiro Nome" required autocomplete="name" oninput="nameValidate()">
+                    <span class="error-msg">não pode ter menos de 3 caracteres</span>
                 </div>
                 <div class="cadastro">
-                    <input type="text" id="L-name" placeholder="Ultimo Nome" required autocomplete="name">
-                    <span id="error"><img src="assets/images/icon-error.svg" alt="" srcset=""></span>
-                    <span class="error-msg">Ultimo Nome não pode estar vazio</span>
+                    <input class='input'type="text" id="L-name" placeholder="Ultimo Nome" oninput="FnameValidate()" required autocomplete="name">
+                    <span class="error-msg">não pode ter menos de 3 caracteres</span>
                 </div>
                 <div class="cadastro">
-                    <input type="email" name="email" id="email" placeholder="E-mail"required autocomplete="email"> 
-                    <span id="error"><img src="assets/images/icon-error.svg" alt="" srcset=""></span>
+                    <input class='input'type="email" name="email" id="email" placeholder="E-mail"required autocomplete="email" oninput="EmailValidate()"> 
                     <span class="error-msg">parece que isso nao é um email</span>
                 </div>
                 <div class="cadastro">
-                    <input type="password" name="senha" id="senha" placeholder="Senha" required >
-                    <span id="error"><img src="assets/images/icon-error.svg" alt="" srcset=""></span>
-                    <span class="error-msg">senha não pode estar vazio</span>
+                    <input class='input'type="password" name="senha" id="senha" minlength="8" oninput="PasswordValidate()" placeholder="Senha" required >
+                    <span class="error-msg">não pode ter menos de 8 caracteres</span>
                 </div>
-                <input type="submit" value="Resgate seu teste gratuito" onclick="click()">
+                <input type="submit" value="Resgate seu teste gratuito"">
                 <p>Ao clicar no botão, você concorda com nossos <a href="">Termos e Serviços</a></p>
             </form>
         </section>
     </main> 
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

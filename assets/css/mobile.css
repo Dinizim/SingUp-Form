@@ -2,11 +2,11 @@
 
 :root{
     --font: 'Poppins',sans-serif;
-    --red:hsl(0, 100%, 74%) ;
+    --red:#ff7a7a ;
     --green:hwb(154 22% 20%) ;
     --Blue: hsl(248, 32%, 49%) ;
     --DarkBlue: hsl(249, 10%, 26%) ;
-    --GrayishBlue: hsl(246, 25%, 77%); 
+    --GrayishBlue: #b9b6d3; 
      font-size: 16px ;
 }
 @media screen and (min-width:375px){
